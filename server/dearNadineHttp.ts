@@ -1,7 +1,7 @@
 import { z } from "zod";
 import type { Application, Request, Response } from "express";
-import { nativeQuestionInputSchema, saveQuestionSubmission } from "./dearNadine";
-import { nativeKitSubscriptionSchema, subscribeToDearNadine } from "./kit";
+import { nativeQuestionInputSchema, saveQuestionSubmission } from "./dearNadine.js";
+import { nativeKitSubscriptionSchema, subscribeToDearNadine } from "./kit.js";
 
 export function parseNativeQuestionPost(body: Record<string, unknown>) {
   return nativeQuestionInputSchema.parse({

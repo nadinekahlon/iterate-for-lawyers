@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import { registerDearNadineHttpRoutes } from "../server/dearNadineHttp";
+import { registerDearNadineHttpRoutes } from "../server/dearNadineHttp.js";
 
 dotenv.config();
 
