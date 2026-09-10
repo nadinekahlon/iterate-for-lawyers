@@ -1,5 +1,5 @@
 import { z } from "zod";
-import type { Express, Request, Response } from "express";
+import type { Application, Request, Response } from "express";
 import { nativeQuestionInputSchema, saveQuestionSubmission } from "./dearNadine";
 import { nativeKitSubscriptionSchema, subscribeToDearNadine } from "./kit";
 
@@ -34,7 +34,7 @@ export function extractRouteErrorMessage(error: unknown, fallback: string): stri
   return fallback;
 }
 
-export function registerDearNadineHttpRoutes(app: Express) {
+export function registerDearNadineHttpRoutes(app: Application) {
   // Anonymous question submission
   app.post("/api/dear-nadine/submit", async (req: Request, res: Response) => {
     const isJson = req.headers["accept"]?.includes("application/json") || req.is("json");
