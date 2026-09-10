@@ -1,5 +1,17 @@
 import { useState, type FormEvent } from "react";
 
+function toErrorMessageString(error: unknown, fallback: string): string {
+  if (typeof error === "string" && error.trim().length > 0) {
+    return error;
+  }
+  if (error && typeof error === "object") {
+    if ("message" in error && typeof (error as { message?: unknown }).message === "string") {
+      return (error as { message: string }).message;
+    }
+  }
+  return fallback;
+}
+
 export default function NativeQuestionForm() {
   const [question, setQuestion] = useState("");
   const [publicationConsent, setPublicationConsent] = useState(false);
@@ -25,12 +37,12 @@ export default function NativeQuestionForm() {
         body: JSON.stringify({ question, publicationConsent, website }),
       });
 
-      const data = await response.json();
+      const data = await response.json().catch(() => ({}));
 
-      if (response.ok && data.success) {
+      if (response.ok && data?.success) {
         setSubmitted(true);
       } else {
-        setErrorMsg(data.error || "Please complete the question and consent box, then try again.");
+        setErrorMsg(toErrorMessageString(data?.error, "Please complete the question and consent box, then try again."));
       }
     } catch {
       setErrorMsg("Network error. Please try again.");

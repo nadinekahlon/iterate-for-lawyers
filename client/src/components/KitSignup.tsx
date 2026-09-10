@@ -1,5 +1,17 @@
 import { useState, type FormEvent } from "react";
 
+function toErrorMessageString(error: unknown, fallback: string): string {
+  if (typeof error === "string" && error.trim().length > 0) {
+    return error;
+  }
+  if (error && typeof error === "object") {
+    if ("message" in error && typeof (error as { message?: unknown }).message === "string") {
+      return (error as { message: string }).message;
+    }
+  }
+  return fallback;
+}
+
 export default function KitSignup() {
   const [email, setEmail] = useState("");
   const [website, setWebsite] = useState("");
@@ -25,13 +37,13 @@ export default function KitSignup() {
         body: JSON.stringify({ email_address: email, website }),
       });
 
-      const data = await response.json();
+      const data = await response.json().catch(() => ({}));
 
-      if (response.ok && data.success) {
+      if (response.ok && data?.success) {
         setStatus("success");
       } else {
         setStatus("error");
-        setErrorMessage(data.error || "Your subscription could not be saved. Please try again.");
+        setErrorMessage(toErrorMessageString(data?.error, "Your subscription could not be saved. Please try again."));
       }
     } catch {
       setStatus("error");

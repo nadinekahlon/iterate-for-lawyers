@@ -1,3 +1,4 @@
+import { z } from "zod";
 import type { Express, Request, Response } from "express";
 import { nativeQuestionInputSchema, saveQuestionSubmission } from "./dearNadine";
 import { nativeKitSubscriptionSchema, subscribeToDearNadine } from "./kit";
@@ -15,6 +16,22 @@ export function parseNativeKitSubscriptionPost(body: Record<string, unknown>) {
     emailAddress: typeof body.email_address === "string" ? body.email_address : typeof body.emailAddress === "string" ? body.emailAddress : "",
     website: typeof body.website === "string" ? body.website : "",
   });
+}
+
+export function extractRouteErrorMessage(error: unknown, fallback: string): string {
+  if (error instanceof z.ZodError) {
+    return error.issues[0]?.message || error.errors[0]?.message || fallback;
+  }
+  if (error instanceof Error) {
+    return error.message;
+  }
+  if (typeof error === "string") {
+    return error;
+  }
+  if (error && typeof error === "object" && "message" in error && typeof (error as any).message === "string") {
+    return (error as any).message;
+  }
+  return fallback;
 }
 
 export function registerDearNadineHttpRoutes(app: Express) {
@@ -36,7 +53,7 @@ export function registerDearNadineHttpRoutes(app: Express) {
       return res.redirect(303, "/dear-nadine?submitted=1#ask");
     } catch (error) {
       if (isJson) {
-        const message = error instanceof Error ? error.message : "Validation failed.";
+        const message = extractRouteErrorMessage(error, "Validation failed.");
         return res.status(400).json({ success: false, error: message });
       }
       return res.redirect(303, "/dear-nadine?submitted=error#ask");
@@ -66,7 +83,7 @@ export function registerDearNadineHttpRoutes(app: Express) {
     } catch (error) {
       console.error("[Dear Nadine] Kit subscription failed:", error);
       if (isJson) {
-        const message = error instanceof Error ? error.message : "Kit subscription failed.";
+        const message = extractRouteErrorMessage(error, "Kit subscription failed.");
         return res.status(400).json({ success: false, error: message });
       }
       return res.redirect(303, "/dear-nadine?subscription=error#subscribe");
