@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 
 const calendlyUrl = "https://calendly.com/nadine-kahlon/new-meeting?month=2026-08";
 const introductionCalendlyUrl = "https://calendly.com/nadine-kahlon/career-strategy-introduction";
-const logoUrl = "/assets/logo-symbol.png";
+const logoUrl = "/assets/iterate-original-symbol_logo.webp";
 
 const navItems = [
   { label: "Home", href: "/" },

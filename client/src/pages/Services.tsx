@@ -1,6 +1,6 @@
 import { BookingLink, Eyebrow } from "@/components/SiteShell";
 
-const notesUrl = "/assets/margin-notes.png";
+const notesUrl = "/assets/iterate-margin-notes_2.webp";
 const introductionCalendlyUrl = "https://calendly.com/nadine-kahlon/career-strategy-introduction";
 
 export default function Services() {

@@ -1,6 +1,6 @@
 import { Eyebrow, TextLink } from "@/components/SiteShell";
 
-const portraitUrl = "/assets/about-portrait.png";
+const portraitUrl = "/assets/iterate-nadine-kahlon-portrait_3.webp";
 
 const credentials = [
   { label: "Top-tier private practice", detail: "Allens" },

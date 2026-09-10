@@ -1,6 +1,6 @@
 import { Eyebrow } from "@/components/SiteShell";
 
-const quietTableUrl = "/assets/decision-workspace.png";
+const quietTableUrl = "/assets/iterate-decision-workspace_5.jpg";
 
 export default function Podcast() {
   return (
