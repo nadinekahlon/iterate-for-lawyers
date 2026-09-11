@@ -1,5 +1,6 @@
-import type { ReactNode } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import { Link, useLocation } from "wouter";
+import { Menu, X } from "lucide-react";
 
 const calendlyUrl = "https://calendly.com/nadine-kahlon/new-meeting?month=2026-08";
 const introductionCalendlyUrl = "https://calendly.com/nadine-kahlon/career-strategy-introduction";
@@ -60,12 +61,29 @@ export function Eyebrow({ number, children, light = false }: { number?: string; 
 
 export function SiteShell({ children }: { children: ReactNode }) {
   const [location] = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location]);
+
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
   return (
     <div className="site-shell">
-      <header className="site-header">
+      <header className={`site-header ${mobileMenuOpen ? "menu-open" : ""}`}>
         <div className="site-header-inner">
           <Brand />
-          <nav className="main-nav" aria-label="Primary navigation">
+          <nav className="main-nav desktop-only" aria-label="Primary navigation">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className={`nav-link ${location === item.href ? "active" : ""}`}>
                 {item.label}
@@ -73,11 +91,44 @@ export function SiteShell({ children }: { children: ReactNode }) {
             ))}
           </nav>
           <BookingLink
-            className="header-booking"
+            className="header-booking desktop-only"
             href={introductionCalendlyUrl}
             label="Book your Career Strategy Introduction"
           />
+          <button
+            type="button"
+            className="mobile-menu-toggle"
+            onClick={() => setMobileMenuOpen((prev) => !prev)}
+            aria-expanded={mobileMenuOpen}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </div>
+        {mobileMenuOpen && (
+          <>
+            <div className="mobile-menu-backdrop" onClick={() => setMobileMenuOpen(false)} aria-hidden="true" />
+            <div className="mobile-menu-drawer">
+              <nav className="mobile-nav" aria-label="Mobile navigation">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`mobile-nav-link ${location === item.href ? "active" : ""}`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+                <BookingLink
+                  className="mobile-menu-booking"
+                  href={introductionCalendlyUrl}
+                  label="Book your Career Strategy Introduction"
+                />
+              </nav>
+            </div>
+          </>
+        )}
       </header>
       <main>{children}</main>
       <footer className="site-footer">
