@@ -36,7 +36,7 @@ export default function Home() {
       <section className="platform-section">
         <div className="platform-copy">
           <Eyebrow number="02">The platform</Eyebrow>
-          <h2>For lawyers who have followed the path—and are starting to <em>question it.</em></h2>
+          <h2>For lawyers who have followed the path and are starting to <em>question it.</em></h2>
         </div>
         <div className="platform-text">
           <p>
@@ -50,7 +50,7 @@ export default function Home() {
 
       <section className="home-cards">
         <TextLink href="/services" className="feature-card service-card home-service-card" showArrow={false}>
-          <span className="card-number">03 — Private service</span>
+          <span className="card-number">03 — Service</span>
           <h2>One private conversation.<br /><em>More clarity.</em></h2>
           <p>A confidential 90-minute Career Strategy Conversation.</p>
           <span className="card-action">Explore services <span>↘</span></span>

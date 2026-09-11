@@ -25,14 +25,14 @@ export default function Podcast() {
         <div className="section-slim">
           <Eyebrow number="02">What to expect</Eyebrow>
           <h2>Not another podcast about how to be more <em>productive.</em></h2>
-          <p>These will be candid conversations about what lawyers actually think about work—and often do not say out loud.</p>
+          <p>These will be candid conversations about what lawyers actually think about work and often do not say out loud.</p>
           <p>Episodes will be added here when the series launches.</p>
           <div className="podcast-guest-callout">
             <Eyebrow number="03">Be a guest</Eyebrow>
             <h2>Not every legal career follows the expected <em>path.</em></h2>
             <p>
-              If you have made an interesting move, changed direction, built something alongside
-              law or learnt something worth sharing, get in touch about being a guest.
+              If you have made an interesting career move, changed direction, built something alongside
+              law or learnt something worth sharing, please get in touch about being a guest.
             </p>
           </div>
         </div>

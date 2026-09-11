@@ -25,7 +25,21 @@ export default function About() {
             <p>I’m Nadine Kahlon. I have worked for over 15 years building an enviable resume in law. Top tier law firm. Senior in-house counsel. Internal and external commercial secondments.</p>
             <p>I have been promoted in the most competitive of environments. I have sat on industry association committees. I have deep networks at senior levels across banks, corporates and law firms. And there isn’t much I don’t have a perspective on.</p>
             <p>I launched Iterate for Lawyers because there were times in my career that I would have definitely benefited from having someone experienced, objective and direct to bring clarity to my thinking.</p>
-            <p>Lawyers are smart, rational problem solvers - yet often we don’t think clearly about or deliberately enough about our own career decisions. Having the right person to strategically advise can make a huge difference - to get to where you need to be with more confidence and less stress.</p>
+            <p>Lawyers are smart, rational problem solvers yet often we don’t think clearly about or deliberately enough about our own career decisions. Having the right person to strategically advise can make a huge difference to get to where you need to be with more confidence and less stress.</p>
+          </div>
+          <div className="about-connect">
+            <p className="connect-prompt">if this resonates with you, connect with me:</p>
+            <div className="connect-links">
+              <a href="mailto:nadine@iterateforlawyers.com" className="connect-link">
+                nadine@iterateforlawyers.com
+              </a>
+              <a href="https://www.linkedin.com/in/nadinekahlon/" target="_blank" rel="noopener noreferrer" className="connect-link">
+                LinkedIn <span aria-hidden="true" className="arrow">↘</span>
+              </a>
+              <a href="https://www.instagram.com/iterateforlawyers/" target="_blank" rel="noopener noreferrer" className="connect-link">
+                Instagram <span aria-hidden="true" className="arrow">↘</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -48,9 +62,22 @@ export default function About() {
         </div>
       </section>
 
+      <section className="about-why section-ink">
+        <div className="about-why-inner">
+          <Eyebrow number="03" light>Why Iterate</Eyebrow>
+          <div className="about-why-copy">
+            <h2>There is no one right answer.<br /><em>But there should be a better question.</em></h2>
+            <p>Iterate is for lawyers thinking through consequential career decisions—from promotion, moving in-house, navigating office politics, finding a workplace culture that fits or deciding whether to stay in the law at all.</p>
+            <p>There are no universal answers. The work is to get clear on what matters to you, recognise the forces shaping your decisions and make a move you can stand behind.</p>
+            <p>Sometimes the right decision is to stay and change how you are working. Sometimes it is to ask for more. Sometimes it is to stop waiting for a workplace to give you clarity it cannot give. And sometimes it is to make a more significant change.</p>
+            <p>My role is to bring practical lived career experiences, clear thinking and a straight conversation to the decision in front of you. I will help you get to the issue faster, cut through the noise and work out what a more deliberate next move would require.</p>
+          </div>
+        </div>
+      </section>
+
       <section className="section-paper about-story">
         <div className="story-grid">
-          <div><Eyebrow number="03">The work behind the work</Eyebrow></div>
+          <div><Eyebrow number="04">The work behind the work</Eyebrow></div>
           <div className="story-copy">
             <h2>Lawyers are trained to solve everyone else’s problems. <em>Not always their own.</em></h2>
             <p>I understand the pace, expectations and pressure that comes with being a lawyer. I have lived it. It doesn’t matter if you work in private practice, in-house or a government role – the issues are often the same.</p>
@@ -64,28 +91,38 @@ export default function About() {
         </div>
       </section>
 
-      <section className="about-why section-ink">
-        <div className="about-why-inner">
-          <Eyebrow number="04" light>Why Iterate</Eyebrow>
-          <div className="about-why-copy">
-            <h2>There is no one right answer.<br /><em>But there should be a better question.</em></h2>
-            <p>Iterate is for lawyers thinking through consequential career decisions—from promotion, moving in-house, navigating office politics, finding a workplace culture that fits or deciding whether to stay in the law at all.</p>
-            <p>There are no universal answers. The work is to get clear on what matters to you, recognise the forces shaping your decisions and make a move you can stand behind.</p>
-            <p>Sometimes the right decision is to stay and change how you are working. Sometimes it is to ask for more. Sometimes it is to stop waiting for a workplace to give you clarity it cannot give. And sometimes it is to make a more significant change.</p>
-            <p>My role is to bring practical legal-career experience, clear thinking and a straight conversation to the decision in front of you. I will help you get to the issue faster, cut through the noise and work out what a more deliberate next move would require.</p>
-          </div>
-        </div>
-      </section>
-
       <section className="section-sky belief-section">
         <div className="belief-stats">
           <div><strong>15+</strong><span>years across private practice and in-house legal roles</span></div>
-          <div><strong>01</strong><span>simple belief: your career deserves your own judgment</span></div>
+          <div><strong>01</strong><span>simple belief: your career deserves better judgment (not your own judgment)</span></div>
           <div><strong>Now</strong><span>holding a more honest conversation about the professional life of lawyers</span></div>
         </div>
         <div className="belief-cta">
           <h2>If a career decision has been taking up more space than you want it to, <em>we can work out what it looks like on your terms.</em></h2>
-          <TextLink href="/services">Talk through your career</TextLink>
+        </div>
+        <div className="about-footer-signoff" aria-label="Nadine Kahlon visual sign-off">
+          <div className="signoff-brand">
+            <span className="signoff-mark">NK</span>
+            <span className="signoff-caption">Nadine Kahlon</span>
+          </div>
+          <div className="signoff-social">
+            <a
+              href="https://www.linkedin.com/in/nadinekahlon/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="signoff-link"
+            >
+              LinkedIn <span aria-hidden="true" className="arrow">↘</span>
+            </a>
+            <a
+              href="https://www.instagram.com/iterateforlawyers/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="signoff-link"
+            >
+              Instagram <span aria-hidden="true" className="arrow">↘</span>
+            </a>
+          </div>
         </div>
       </section>
     </>

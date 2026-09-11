@@ -60,7 +60,7 @@ export default function DearNadine() {
           <h1>The questions you ask yourself when work gets <em>quiet.</em></h1>
           <p>
             A monthly column for lawyers who want a more honest conversation about work,
-            ambition and what comes next—whether you are in private practice, in-house or
+            ambition and what comes next whether you are in private practice, in-house or
             somewhere in the messy middle. For the things you might not say in a performance
             review, but should probably think about before making your next move.
           </p>
@@ -81,7 +81,7 @@ export default function DearNadine() {
 
       <section className="dear-statement section-ink">
         <div className="dear-statement-inner">
-          <Eyebrow number="06" light>What this is</Eyebrow>
+          <Eyebrow number="06" light>What Is It</Eyebrow>
           <h2>Not a neat answer.<br />A better <em>question.</em></h2>
           <div className="dear-statement-copy">
             <p>
@@ -151,7 +151,7 @@ export default function DearNadine() {
           <h2>Two questions. Two answers. <em>Every month.</em></h2>
           <p>
             Subscribe if you would like each edition in your inbox. Your email is separate from
-            the anonymous-question form, and you can unsubscribe at any time.
+            the anonymous question form, and you can unsubscribe at any time.
           </p>
         </div>
         <div className="dear-subscribe-panel">
@@ -179,11 +179,6 @@ export default function DearNadine() {
           ) : (
             <KitSignup />
           )}
-          <p className="dear-subscribe-note">
-            By subscribing, you agree to receive Dear Nadine and occasional updates about Nadine’s
-            private career-strategy advisory work. Kit will email you a confirmation link before
-            adding you to the list. You can unsubscribe at any time.
-          </p>
         </div>
       </section>
 
