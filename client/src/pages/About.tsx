@@ -94,7 +94,7 @@ export default function About() {
       <section className="section-sky belief-section">
         <div className="belief-stats">
           <div><strong>15+</strong><span>years across private practice and in-house legal roles</span></div>
-          <div><strong>01</strong><span>simple belief: your career deserves better judgment (not your own judgment)</span></div>
+          <div><strong>01</strong><span>simple belief: your career deserves better judgment</span></div>
           <div><strong>Now</strong><span>holding a more honest conversation about the professional life of lawyers</span></div>
         </div>
         <div className="belief-cta">
