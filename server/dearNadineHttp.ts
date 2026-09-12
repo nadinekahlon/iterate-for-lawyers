@@ -1,6 +1,6 @@
 import { z } from "zod";
 import type { Application, Request, Response } from "express";
-import { nativeQuestionInputSchema, saveQuestionSubmission } from "./dearNadine.js";
+import { nativeQuestionInputSchema, sendDearNadineQuestionEmail } from "./dearNadine.js";
 import { nativeKitSubscriptionSchema, subscribeToDearNadine } from "./kit.js";
 
 export function parseNativeQuestionPost(body: Record<string, unknown>) {
@@ -42,9 +42,9 @@ export function registerDearNadineHttpRoutes(app: Application) {
     try {
       const input = parseNativeQuestionPost(req.body as Record<string, unknown>);
 
-      // Honeypot check: suspected bots receive a neutral response without database retention
+      // Honeypot check: suspected bots receive a neutral response without sending email
       if (!input.website) {
-        saveQuestionSubmission(input.question, input.publicationConsent);
+        await sendDearNadineQuestionEmail(input.question, input.publicationConsent);
       }
 
       if (isJson) {
@@ -52,8 +52,9 @@ export function registerDearNadineHttpRoutes(app: Application) {
       }
       return res.redirect(303, "/dear-nadine?submitted=1#ask");
     } catch (error) {
+      console.error("[Dear Nadine Question Email Failed]:", error instanceof Error ? error.message : error);
       if (isJson) {
-        const message = extractRouteErrorMessage(error, "Validation failed.");
+        const message = extractRouteErrorMessage(error, "Submission failed. Please try again.");
         return res.status(400).json({ success: false, error: message });
       }
       return res.redirect(303, "/dear-nadine?submitted=error#ask");

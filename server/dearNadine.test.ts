@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
 import { parseNativeKitSubscriptionPost, parseNativeQuestionPost } from "./dearNadineHttp";
+import { sendDearNadineQuestionEmail } from "./dearNadine";
 
-describe("Dear Nadine HTTP Post Parsing", () => {
+describe("Dear Nadine HTTP Post Parsing & Email Delivery", () => {
   const validQuestion = "I am testing the native anonymous-question form with a safe and sufficiently detailed test question.";
 
   it("accepts valid question input posted by the HTML form", () => {
@@ -14,6 +15,12 @@ describe("Dear Nadine HTTP Post Parsing", () => {
 
   it("rejects a question post with no publication consent", () => {
     expect(() => parseNativeQuestionPost({ question: validQuestion, website: "" })).toThrow();
+  });
+
+  it("sends email notification for anonymous question in local dev mode", async () => {
+    const result = await sendDearNadineQuestionEmail(validQuestion, true);
+    expect(result.success).toBe(true);
+    expect(result.provider).toBeDefined();
   });
 
   it("accepts valid email subscription post", () => {
