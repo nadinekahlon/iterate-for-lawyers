@@ -107,7 +107,7 @@ export default function KitSignup() {
         </button>
       </form>
       <p className="native-kit-note">
-        By subscribing, you agree to receive Dear Nadine and occasional updates about Nadine’s private career-strategy advisory work. Kit will email you a confirmation link before adding you to the list. You can unsubscribe at any time.
+        By subscribing, you agree to receive Dear Nadine and occasional updates about Nadine’s private career strategy advisory work. Kit will email you a confirmation link before adding you to the list. You can unsubscribe at any time.
       </p>
     </div>
   );

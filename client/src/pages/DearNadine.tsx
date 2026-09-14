@@ -89,8 +89,7 @@ export default function DearNadine() {
               to ask inside your own workplace.
             </p>
             <p>
-              The column offers a considered perspective. It is not legal advice, therapy,
-              recruitment advice or a substitute for the judgment you need to make for yourself.
+              The column offers a considered perspective. It is not legal advice, a counselling session, recruitment advice or a substitute for your own judgment.
             </p>
           </div>
         </div>
@@ -192,7 +191,7 @@ export default function DearNadine() {
             <p>
               If you are sitting with a decision that is more personal than a column can answer,
               a private Career Strategy Conversation gives you room to look at the options,
-              assumptions and trade-offs properly.
+              assumptions and opportunity costs properly.
             </p>
             <BookingLink
               className="dear-private-booking"

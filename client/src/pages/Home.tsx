@@ -15,7 +15,7 @@ export default function Home() {
             <em>Be deliberate<br />about yours.</em>
           </h1>
           <p>
-            Whether you’re considering moving in-house, vying for promotion, navigating office politics, or deciding whether to stay in law or leave and do something entirely different - consequential decisions require a clear strategy.
+            Whether you’re considering moving in-house, vying for promotion, navigating office politics, or deciding whether to stay in law or leave and do something entirely different consequential decisions require a clear strategy.
           </p>
           <div className="hero-actions">
             <TextLink href="/services" className="text-link-dark">Explore services</TextLink>
@@ -27,7 +27,7 @@ export default function Home() {
             <blockquote>“A career can be successful and still need to change. Those two things are not in conflict.”</blockquote>
             <figcaption>
               <strong>Nadine Kahlon</strong>
-              <span>Founder · ex-Allens · former senior legal counsel, Macquarie Group</span>
+              <span>ex-Allens · former senior legal counsel, Macquarie Group</span>
             </figcaption>
           </figure>
         </div>
