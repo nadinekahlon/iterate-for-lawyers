@@ -67,7 +67,7 @@ export default function About() {
           <Eyebrow number="03" light>Why Iterate</Eyebrow>
           <div className="about-why-copy">
             <h2>There is no one right answer.<br /><em>But there should be a better question.</em></h2>
-            <p>Iterate is for lawyers thinking through consequential career decisions—from promotion, moving in-house, navigating office politics, finding a workplace culture that fits or deciding whether to stay in the law at all.</p>
+            <p>Iterate is for lawyers thinking through consequential career decisions from promotion, moving in-house, navigating office politics, finding a workplace culture that fits or deciding whether to stay in the law at all.</p>
             <p>There are no universal answers. The work is to get clear on what matters to you, recognise the forces shaping your decisions and make a move you can stand behind.</p>
             <p>Sometimes the right decision is to stay and change how you are working. Sometimes it is to ask for more. Sometimes it is to stop waiting for a workplace to give you clarity it cannot give. And sometimes it is to make a more significant change.</p>
             <p>My role is to bring practical lived career experiences, clear thinking and a straight conversation to the decision in front of you. I will help you get to the issue faster, cut through the noise and work out what a more deliberate next move would require.</p>
