@@ -195,7 +195,7 @@ export default function DearNadine() {
             </p>
             <BookingLink
               className="dear-private-booking"
-              href="https://calendly.com/nadine-kahlon/career-strategy-introduction"
+              href="https://calendly.com/nadine-iterateforlawyers/30min"
               label="Book your Career Strategy Introduction"
             />
           </div>

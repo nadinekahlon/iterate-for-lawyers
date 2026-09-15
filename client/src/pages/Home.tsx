@@ -2,7 +2,7 @@ import { BookingLink, Eyebrow, TextLink } from "@/components/SiteShell";
 
 const portraitUrl = "/assets/iterate-nadine-hero-portrait-1.webp";
 const notesUrl = "/assets/iterate-margin-notes_2.webp";
-const introductionCalendlyUrl = "https://calendly.com/nadine-kahlon/career-strategy-introduction";
+const introductionCalendlyUrl = "https://calendly.com/nadine-iterateforlawyers/30min";
 
 export default function Home() {
   return (

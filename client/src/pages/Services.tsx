@@ -1,7 +1,7 @@
 import { BookingLink, Eyebrow } from "@/components/SiteShell";
 
 const notesUrl = "/assets/iterate-margin-notes_2.webp";
-const introductionCalendlyUrl = "https://calendly.com/nadine-kahlon/career-strategy-introduction";
+const introductionCalendlyUrl = "https://calendly.com/nadine-iterateforlawyers/30min";
 
 export default function Services() {
   return (

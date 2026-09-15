@@ -2,8 +2,8 @@ import { useState, useEffect, type ReactNode } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 
-const calendlyUrl = "https://calendly.com/nadine-kahlon/new-meeting?month=2026-08";
-const introductionCalendlyUrl = "https://calendly.com/nadine-kahlon/career-strategy-introduction";
+const calendlyUrl = "https://calendly.com/nadine-iterateforlawyers/30min";
+const introductionCalendlyUrl = "https://calendly.com/nadine-iterateforlawyers/30min";
 const logoUrl = "/assets/iterate-original-symbol_logo.webp";
 
 const navItems = [
