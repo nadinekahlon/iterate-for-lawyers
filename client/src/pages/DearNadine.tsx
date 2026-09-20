@@ -56,24 +56,24 @@ export default function DearNadine() {
     <>
       <section className="dear-hero">
         <div className="dear-hero-copy">
-          <Eyebrow number="05">Dear Nadine</Eyebrow>
+          <Eyebrow number="01">Dear Nadine</Eyebrow>
           <h1>The questions you ask yourself when work gets <em>quiet.</em></h1>
           <p>
-            A monthly column for lawyers who want a more honest conversation about work,
-            ambition and what comes next whether you are in private practice, in-house or
-            somewhere in the messy middle. For the things you might not say in a performance
-            review, but should probably think about before making your next move.
+            A monthly Q&A for lawyers who want a more honest conversation about work, ambition and what comes next. Each edition explores the questions lawyers are asking - and offers a window into the career decisions, tensions and experiences others are navigating
           </p>
           <div className="dear-hero-actions">
-            <button
-              className="button button-ink dear-ask-trigger"
-              type="button"
-              onClick={() => setQuestionDialogOpen(true)}
-            >
-              Ask anonymously <DownArrow />
-            </button>
+            <div className="dear-ask-action-wrapper">
+              <button
+                className="button button-ink dear-ask-trigger"
+                type="button"
+                onClick={() => setQuestionDialogOpen(true)}
+              >
+                Ask a question anonymously <DownArrow />
+              </button>
+              <span className="dear-ask-subtext">No name or email address required.</span>
+            </div>
             <a className="button dear-receive-button" href="#subscribe">
-              Receive the column <DownArrow />
+              Get the next edition. <DownArrow />
             </a>
           </div>
         </div>
@@ -81,16 +81,23 @@ export default function DearNadine() {
 
       <section className="dear-statement section-ink">
         <div className="dear-statement-inner">
-          <Eyebrow number="06" light>What Is It</Eyebrow>
-          <h2>Not a neat answer.<br />A better <em>question.</em></h2>
-          <div className="dear-statement-copy">
-            <p>
-              Dear Nadine is for career questions that are personal, consequential and difficult
-              to ask inside your own workplace.
-            </p>
-            <p>
-              The column offers a considered perspective. It is not legal advice, a counselling session, recruitment advice or a substitute for your own judgment.
-            </p>
+          <div>
+            <Eyebrow number="02" light>HOW IT WORKS</Eyebrow>
+            <h2>Not a neat answer.<br />A better <em>question.</em></h2>
+          </div>
+          <div className="dear-steps">
+            <div className="dear-step-card">
+              <h3 className="step-title"><span className="step-num">1.</span> Ask anonymously.</h3>
+              <p>Send the career question you cannot comfortably ask at work. No name or email address is required.</p>
+            </div>
+            <div className="dear-step-card">
+              <h3 className="step-title"><span className="step-num">2.</span> I select two questions each month.</h3>
+              <p>Questions may be edited or combined so nobody can be identified.</p>
+            </div>
+            <div className="dear-step-card">
+              <h3 className="step-title"><span className="step-num">3.</span> Receive the column.</h3>
+              <p>Get two considered answers in your inbox each month.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -106,13 +113,13 @@ export default function DearNadine() {
             <Eyebrow>Ask anonymously</Eyebrow>
             <h2>Tell me the question you cannot quite bring yourself to <em>ask out loud.</em></h2>
             <p>
-              No name. No email address. No employer or client details. If I select your question,
-              I may edit or combine it so it cannot be identified.
+              No name. No email address. No employer or client details. If your question is selected, it may be edited or combined with other questions so it cannot be identified
             </p>
             <ul className="dear-guardrails">
-              <li>Keep client, matter, employer and personal details out of it.</li>
-              <li>Do not name people or make allegations about them.</li>
-              <li>I read every question, but I cannot reply individually through this form.</li>
+              <li>Please ensure that you do not include any personal or confidential details relating to a client, colleague, matter or employer.</li>
+              <li>Do not use any real names of individuals or organisations.</li>
+              <li>Nadine reads every question, but not every question is published. As the form is anonymous, she is not able to reply individually.</li>
+              <li>If you want to discuss your question specifically, reach out to Nadine through her booking page or via email or direct message.</li>
             </ul>
           </div>
           <div className="dear-dialog-form">
@@ -146,11 +153,10 @@ export default function DearNadine() {
 
       <section className="dear-subscribe section-sky" id="subscribe">
         <div className="dear-subscribe-copy">
-          <Eyebrow number="07">Receive Dear Nadine</Eyebrow>
+          <Eyebrow number="03">Receive Dear Nadine</Eyebrow>
           <h2>Two questions. Two answers. <em>Every month.</em></h2>
           <p>
-            Subscribe if you would like each edition in your inbox. Your email is separate from
-            the anonymous question form, and you can unsubscribe at any time.
+            One email each month, with two anonymous questions from lawyers and the answers they deserve.
           </p>
         </div>
         <div className="dear-subscribe-panel">
@@ -184,14 +190,12 @@ export default function DearNadine() {
       <section className="dear-private section-paper">
         <div className="dear-private-inner">
           <div>
-            <Eyebrow number="08">When the answer is personal</Eyebrow>
+            <Eyebrow number="04">When the answer is personal</Eyebrow>
             <h2>The column is public.<br /><em>Your next move is not.</em></h2>
           </div>
           <div className="dear-private-copy">
             <p>
-              If you are sitting with a decision that is more personal than a column can answer,
-              a private Career Strategy Conversation gives you room to look at the options,
-              assumptions and opportunity costs properly.
+              Some questions need more than a public answer. A private Career Strategy Conversation gives you time to examine the options, assumptions and opportunity costs properly.
             </p>
             <BookingLink
               className="dear-private-booking"

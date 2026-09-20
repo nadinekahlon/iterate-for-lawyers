@@ -15,7 +15,7 @@ function PublicRoutes() {
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
       <Route path="/dear-nadine" component={DearNadine} />
-      <Route path="/podcast" component={Podcast} />
+      {/* <Route path="/podcast" component={Podcast} /> */}
       <Route component={NotFound} />
     </Switch>
   );

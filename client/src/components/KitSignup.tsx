@@ -103,11 +103,11 @@ export default function KitSignup() {
           />
         </label>
         <button type="submit" disabled={loading}>
-          {loading ? "Saving..." : "Subscribe"} <span aria-hidden="true">↘</span>
+          {loading ? "Saving..." : "Get the next edition"} <span aria-hidden="true">→</span>
         </button>
       </form>
       <p className="native-kit-note">
-        By subscribing, you agree to receive Dear Nadine and occasional updates about Nadine’s private career strategy advisory work. Kit will email you a confirmation link before adding you to the list. You can unsubscribe at any time.
+        Your email is used to send Dear Nadine each month. You will receive a confirmation email before you are subscribed. You can unsubscribe at any time.
       </p>
     </div>
   );

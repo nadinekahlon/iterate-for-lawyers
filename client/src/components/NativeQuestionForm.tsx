@@ -101,8 +101,7 @@ export default function NativeQuestionForm() {
           required
         />
         <span>
-          I understand that my question may be substantially edited, combined with similar
-          questions and published anonymously.
+          I understand that my question may be edited, combined with a similar question and published anonymously.
         </span>
       </label>
 

@@ -40,10 +40,11 @@ export default function Services() {
           <h2>When the next move needs <em>more thought.</em></h2>
           <ul className="scenario-list">
             <li>You are weighing up a new role, promotion or move in-house.</li>
-            <li>You are doing well on paper but are no longer sure the path fits.</li>
+            <li>You have achieved success but you feel stuck and unsure about your options.</li>
             <li>You are ready to make a change but want to think beyond the obvious options.</li>
             <li>You are considering leaving the law to do something different.</li>
             <li>You need a confidential sounding board outside your workplace.</li>
+            <li>You want to be proactive and plan the direction your career will take.</li>
           </ul>
         </div>
       </section>
@@ -51,11 +52,10 @@ export default function Services() {
       <section className="section-ink what-not">
         <div className="section-slim">
           <Eyebrow number="04" light>What this is not</Eyebrow>
-          <h2>No script. No sales pitch. No pressure to leave law.</h2>
-          <p>These conversations are about career strategy and reflection. They are not legal advice, counselling sessions, recruitment services or an exercise in telling you what to do.</p>
+          <h2>No script. No sales pitch. <em>No pressure to leave the law.</em></h2>
+          <p>Iterate for Lawyers is designed for lawyers to reflect and openly explore their career options. The session is structured and focused on what you want to achieve. You will leave with a clear strategy that feels right for you.</p>
         </div>
       </section>
     </>
   );
 }
-
