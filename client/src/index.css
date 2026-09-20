@@ -527,6 +527,14 @@ em {
   color: #48616e;
 }
 
+.feature-card .card-lead {
+  font-size: clamp(20px, 2.2vw, 26px);
+  line-height: 1.35;
+  color: #314b5c;
+  margin: 28px 0 0;
+  max-width: 580px;
+}
+
 .card-action {
   margin-top: auto;
   text-transform: uppercase;
@@ -734,8 +742,16 @@ em {
   padding-bottom: 120px;
 }
 
+.what-not .eyebrow {
+  padding-bottom: 28px;
+}
+
 .what-not h2 {
   max-width: 820px;
+}
+
+.what-not h2 em {
+  color: #68bee8;
 }
 
 .what-not p {
@@ -1381,9 +1397,23 @@ em {
 
 .dear-hero-actions {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
   flex-wrap: wrap;
+}
+
+.dear-ask-action-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.dear-ask-subtext {
+  font-size: 12px;
+  color: #496170;
+  font-weight: 500;
+  margin-left: 2px;
 }
 
 .dear-hero-aside {
@@ -1449,10 +1479,48 @@ em {
   color: #68bee8;
 }
 
-.dear-statement-copy {
-  color: #c6dce7;
-  max-width: 470px;
-  padding-top: 4px;
+.dear-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 520px;
+}
+
+.dear-step-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-left: 3.5px solid #68bee8;
+  padding: 20px 24px;
+  border-radius: 2px;
+  transition: transform 0.18s ease-out, background 0.18s ease-out, border-color 0.18s ease-out;
+}
+
+.dear-step-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.16);
+  border-left-color: var(--green);
+}
+
+.dear-step-card .step-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 6px;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.dear-step-card .step-title .step-num {
+  color: #68bee8;
+  margin-right: 4px;
+}
+
+.dear-step-card p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #c4dbe7;
+  margin: 0;
 }
 
 .dear-statement-copy p {

@@ -11,7 +11,7 @@ const navItems = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Dear Nadine", href: "/dear-nadine" },
-  { label: "Podcast", href: "/podcast" },
+  // { label: "Podcast", href: "/podcast" },
 ];
 
 function Brand() {

@@ -69,8 +69,8 @@ export default function About() {
             <h2>There is no one right answer.<br /><em>But there should be a better question.</em></h2>
             <p>Iterate is for lawyers thinking through consequential career decisions from promotion, moving in-house, navigating office politics, finding a workplace culture that fits or deciding whether to stay in the law at all.</p>
             <p>There are no universal answers. The work is to get clear on what matters to you, recognise the forces shaping your decisions and make a move you can stand behind.</p>
-            <p>Sometimes the right decision is to stay and change how you are working. Sometimes it is to ask for more. Sometimes it is to stop waiting for a workplace to give you clarity it cannot give. And sometimes it is to make a more significant change.</p>
-            <p>My role is to bring practical lived career experiences, clear thinking and a straight conversation to the decision in front of you. I will help you get to the issue faster, cut through the noise and work out what a more deliberate next move would require.</p>
+            <p>Sometimes the right decision is to stay and change how you are working. Sometimes it is to ask for more. Sometimes it is to stop waiting for a workplace to give you clarity it cannot give. And sometimes it is to make a more significant career change.</p>
+            <p>I bring invaluable and practical lived experience to help you assess the decision in front of you. Together we will cut through the noise, get to the real issues faster and work out what your best next move would require.</p>
           </div>
         </div>
       </section>
@@ -81,11 +81,10 @@ export default function About() {
           <div className="story-copy">
             <h2>Lawyers are trained to solve everyone else’s problems. <em>Not always their own.</em></h2>
             <p>I understand the pace, expectations and pressure that comes with being a lawyer. I have lived it. It doesn’t matter if you work in private practice, in-house or a government role – the issues are often the same.</p>
-            <p>The pressure to keep moving forward, the effort of navigating office politics, the importance of workplace culture and the difficulty of assessing whether what looks like progress from the outside is actually what you want.</p>
-            <p>The questions do not always announce themselves as career questions. They can sound like: <em>Should I put my hand up for this promotion? Is it time to move in-house? Why am I doing well but not enjoying the work? Is this a culture I can succeed in? Do I need to leave law—or just change how I am working?</em></p>
+            <p>The questions do not always announce themselves as career questions. They can sound like: <em>Should I put my hand up for this promotion? Is it time to move in-house? Why am I doing well but not enjoying the work? Is this a culture I can succeed in? Do I need to leave law or just change how I am working?</em></p>
             <p>There is rarely a simple answer.</p>
             <p>Together we will identify what is actually happening, challenge the assumptions, work through your options and bring clarity to the decision-making process.</p>
-            <p>Having a Career Strategy Conversation can stop the overthinking, offer a valuable perspective and help you reach a decision with better clarity.</p>
+            <p>Having a career strategy can stop the overthinking, provide a valuable perspective and help you reach a decision with clarity.</p>
             <blockquote>“A career can be successful and still need to change. Those two things are not in conflict.”</blockquote>
           </div>
         </div>
