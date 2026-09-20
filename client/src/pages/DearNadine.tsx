@@ -70,7 +70,7 @@ export default function DearNadine() {
               >
                 Ask a question anonymously <DownArrow />
               </button>
-              <span className="dear-ask-subtext">No name or email address required.</span>
+              <span className="dear-ask-subtext">*No name or email address required.</span>
             </div>
             <a className="button dear-receive-button" href="#subscribe">
               Get the next edition. <DownArrow />
