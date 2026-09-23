@@ -73,7 +73,7 @@ export default function DearNadine() {
               <span className="dear-ask-subtext">*No name or email address required.</span>
             </div>
             <a className="button dear-receive-button" href="#subscribe">
-              Get the next edition. <DownArrow />
+              Receive The Edit. <DownArrow />
             </a>
           </div>
         </div>
@@ -83,20 +83,20 @@ export default function DearNadine() {
         <div className="dear-statement-inner">
           <div>
             <Eyebrow number="02" light>HOW IT WORKS</Eyebrow>
-            <h2>Not a neat answer.<br />A better <em>question.</em></h2>
+            <h2>Ask yours.<br />Read theirs.<br /><em>Or both.</em></h2>
           </div>
           <div className="dear-steps">
             <div className="dear-step-card">
-              <h3 className="step-title"><span className="step-num">1.</span> Ask anonymously.</h3>
-              <p>Send the career question you cannot comfortably ask at work. No name or email address is required.</p>
+              <h3 className="step-title"><span className="step-num">1.</span> SUBSCRIBE</h3>
+              <p>Receive Dear Nadine: The Edit in your inbox each month.</p>
             </div>
             <div className="dear-step-card">
-              <h3 className="step-title"><span className="step-num">2.</span> I select two questions each month.</h3>
-              <p>Questions may be edited or combined so nobody can be identified.</p>
+              <h3 className="step-title"><span className="step-num">2.</span> IF YOU HAVE A QUESTION</h3>
+              <p>Send it anonymously at any time. No name or email address required.</p>
             </div>
             <div className="dear-step-card">
-              <h3 className="step-title"><span className="step-num">3.</span> Receive the column.</h3>
-              <p>Get two considered answers in your inbox each month.</p>
+              <h3 className="step-title"><span className="step-num">3.</span> EACH MONTH</h3>
+              <p>Read questions other lawyers are asking, with Nadine’s candid perspective shaped by over 15 years in the legal profession.</p>
             </div>
           </div>
         </div>
@@ -154,9 +154,9 @@ export default function DearNadine() {
       <section className="dear-subscribe section-sky" id="subscribe">
         <div className="dear-subscribe-copy">
           <Eyebrow number="03">Receive Dear Nadine</Eyebrow>
-          <h2>Two questions. Two answers. <em>Every month.</em></h2>
+          <h2>A candid read on <em>life in law.</em></h2>
           <p>
-            One email each month, with two anonymous questions from lawyers and the answers they deserve.
+            Receive Dear Nadine: The Edit in your inbox each month.
           </p>
         </div>
         <div className="dear-subscribe-panel">
@@ -191,7 +191,7 @@ export default function DearNadine() {
         <div className="dear-private-inner">
           <div>
             <Eyebrow number="04">When the answer is personal</Eyebrow>
-            <h2>The column is public.<br /><em>Your next move is not.</em></h2>
+            <h2>The Edit is public..<br /><em>Your next move is not.</em></h2>
           </div>
           <div className="dear-private-copy">
             <p>

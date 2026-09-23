@@ -8,7 +8,7 @@ const credentials = [
   { label: "Nearly a decade in-house", detail: "Senior Legal Counsel, Macquarie Group" },
   { label: "Commercial banking secondment", detail: "Macquarie" },
   { label: "Industry contribution", detail: "Committee Member, Women in Loan Markets" },
-  { label: "Founder and business owner", detail: "Axe Co" },
+  { label: "Founder and business owner", detail: "Iterate for Lawyers" },
 ];
 
 export default function About() {
@@ -24,20 +24,20 @@ export default function About() {
           <div className="about-intro-copy">
             <p>I’m Nadine Kahlon. I have worked for over 15 years building an enviable resume in law. Top tier law firm. Senior in-house counsel. Internal and external commercial secondments.</p>
             <p>I have been promoted in the most competitive of environments. I have sat on industry association committees. I have deep networks at senior levels across banks, corporates and law firms. And there isn’t much I don’t have a perspective on.</p>
-            <p>I launched Iterate for Lawyers because there were times in my career that I would have definitely benefited from having someone experienced, objective and direct to bring clarity to my thinking.</p>
+            <p>I launched Iterate for Lawyers because there were times in my career that I would have greatly benefited from having someone experienced, objective and direct to bring clarity to my thinking.</p>
             <p>Lawyers are smart, rational problem solvers yet often we don’t think clearly about or deliberately enough about our own career decisions. Having the right person to strategically advise can make a huge difference to get to where you need to be with more confidence and less stress.</p>
           </div>
           <div className="about-connect">
-            <p className="connect-prompt">if this resonates with you, connect with me:</p>
+            <p className="connect-prompt">If this resonates with you, connect with me:</p>
             <div className="connect-links">
               <a href="mailto:nadine@iterateforlawyers.com" className="connect-link">
                 nadine@iterateforlawyers.com
               </a>
               <a href="https://www.linkedin.com/in/nadinekahlon/" target="_blank" rel="noopener noreferrer" className="connect-link">
-                LinkedIn <span aria-hidden="true" className="arrow">↘</span>
+                LinkedIn
               </a>
               <a href="https://www.instagram.com/iterateforlawyers/" target="_blank" rel="noopener noreferrer" className="connect-link">
-                Instagram <span aria-hidden="true" className="arrow">↘</span>
+                Instagram
               </a>
             </div>
           </div>
@@ -64,12 +64,12 @@ export default function About() {
 
       <section className="about-why section-ink">
         <div className="about-why-inner">
-          <Eyebrow number="03" light>Why Iterate</Eyebrow>
+          <Eyebrow number="03" light>WHY ITERATE FOR LAWYERS?</Eyebrow>
           <div className="about-why-copy">
             <h2>There is no one right answer.<br /><em>But there should be a better question.</em></h2>
-            <p>Iterate is for lawyers thinking through consequential career decisions from promotion, moving in-house, navigating office politics, finding a workplace culture that fits or deciding whether to stay in the law at all.</p>
+            <p>Iterate for Lawyers is for lawyers thinking through consequential career decisions from promotion, moving in-house, navigating office politics, finding a workplace culture that fits or deciding whether to stay in the law at all.</p>
             <p>There are no universal answers. The work is to get clear on what matters to you, recognise the forces shaping your decisions and make a move you can stand behind.</p>
-            <p>Sometimes the right decision is to stay and change how you are working. Sometimes it is to ask for more. Sometimes it is to stop waiting for a workplace to give you clarity it cannot give. And sometimes it is to make a more significant career change.</p>
+            <p>Sometimes the right decision is to stay and change how you are working. Sometimes it is to ask for more. Sometimes it is to stop waiting for a workplace to give you clarity it can’t give. And sometimes it is to make a more significant career change.</p>
             <p>I bring invaluable and practical lived experience to help you assess the decision in front of you. Together we will cut through the noise, get to the real issues faster and work out what your best next move would require.</p>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function About() {
               rel="noopener noreferrer"
               className="signoff-link"
             >
-              LinkedIn <span aria-hidden="true" className="arrow">↘</span>
+              LinkedIn
             </a>
             <a
               href="https://www.instagram.com/iterateforlawyers/"
@@ -119,7 +119,7 @@ export default function About() {
               rel="noopener noreferrer"
               className="signoff-link"
             >
-              Instagram <span aria-hidden="true" className="arrow">↘</span>
+              Instagram
             </a>
           </div>
         </div>
