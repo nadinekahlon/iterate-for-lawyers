@@ -11,13 +11,13 @@ const navItems = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Dear Nadine", href: "/dear-nadine" },
-  // { label: "Podcast", href: "/podcast" },
+  { label: "Podcast", href: "/podcast" },
 ];
 
-function Brand() {
+function Brand({ showMark = true }: { showMark?: boolean }) {
   return (
     <Link href="/" className="brand" aria-label="Iterate for Lawyers home">
-      <img src={logoUrl} alt="Iterate Logo" className="brand-mark" />
+      {showMark && <img src={logoUrl} alt="Iterate Logo" className="brand-mark" />}
       <span className="brand-copy">
         <strong>Iterate</strong>
         <span>for lawyers</span>
@@ -82,7 +82,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
     <div className="site-shell">
       <header className={`site-header ${mobileMenuOpen ? "menu-open" : ""}`}>
         <div className="site-header-inner">
-          <Brand />
+          <Brand showMark={false} />
           <nav className="main-nav desktop-only" aria-label="Primary navigation">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className={`nav-link ${location === item.href ? "active" : ""}`}>
@@ -133,7 +133,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <main>{children}</main>
       <footer className="site-footer">
         <div className="footer-top">
-          <Brand />
+          <Brand showMark={false} />
           <p>Career strategy for lawyers who want a more considered conversation about what comes next.</p>
         </div>
         <div className="footer-bottom">

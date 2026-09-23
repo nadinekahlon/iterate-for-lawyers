@@ -103,11 +103,11 @@ export default function KitSignup() {
           />
         </label>
         <button type="submit" disabled={loading}>
-          {loading ? "Saving..." : "Get the next edition"} <span aria-hidden="true">→</span>
+          {loading ? "Saving..." : "Receive The Edit"} <span aria-hidden="true">→</span>
         </button>
       </form>
       <p className="native-kit-note">
-        Your email is used to send Dear Nadine each month. You will receive a confirmation email before you are subscribed. You can unsubscribe at any time.
+        You will receive a confirmation email before you are subscribed. Unsubscribe at any time.
       </p>
     </div>
   );

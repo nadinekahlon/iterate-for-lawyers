@@ -28,7 +28,7 @@ export default function Services() {
             <div><dt>Where</dt><dd>Zoom or in person (Martin Place)</dd></div>
           </dl>
           <div className="service-introduction-inline">
-            <p>A complimentary 20-minute confidential call to discuss what is prompting the question and whether a longer conversation is the right next step.</p>
+            <p>A confidential 20-minute call to see whether a Career Strategy Conversation is the right next step for you.</p>
             <BookingLink href={introductionCalendlyUrl} label="Book your Career Strategy Introduction" />
           </div>
         </div>

@@ -49,7 +49,7 @@ export default function Home() {
             Lawyers you work with may have a real conflict of interest and people outside of law often don’t really understand your situation or how the legal profession works.
           </p>
           <p>
-            Iterate was created to provide a confidential space for honest conversations, where you leave with a proactive strategy for the next steps in your career.
+            Iterate for lawyers was created to provide a confidential space for an honest conversation, where you leave with a proactive strategy for the next steps in your career.
           </p>
         </div>
       </section>
