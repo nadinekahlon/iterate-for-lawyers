@@ -73,7 +73,7 @@ export default function DearNadine() {
               <span className="dear-ask-subtext">No name or email address required.</span>
             </div>
             <a className="button dear-receive-button" href="#subscribe">
-              Receive The Edit. <DownArrow />
+              Receive The Edit <DownArrow />
             </a>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function DearNadine() {
             </div>
             <div className="dear-step-card">
               <h3 className="step-title"><span className="step-num">2.</span> IF YOU HAVE A QUESTION</h3>
-              <p>Send it anonymously at any time. No name or email address required.</p>
+              <p>Send it anonymously at any time.<br />No name or email address required.</p>
             </div>
             <div className="dear-step-card">
               <h3 className="step-title"><span className="step-num">3.</span> EACH MONTH</h3>
@@ -190,12 +190,12 @@ export default function DearNadine() {
       <section className="dear-private section-paper">
         <div className="dear-private-inner">
           <div>
-            <Eyebrow number="04">When the answer is personal</Eyebrow>
-            <h2>The Edit is public..<br /><em>Your next move is not.</em></h2>
+            <Eyebrow number="04">WHEN THE QUESTION IS PERSONAL</Eyebrow>
+            <h2>The Edit is public.<br /><em>Your next move is not.</em></h2>
           </div>
           <div className="dear-private-copy">
             <p>
-              Some questions need more than a public answer. A private Career Strategy Conversation gives you time to examine the options, assumptions and opportunity costs properly.
+              Some questions need more than a generic answer. A private Career Strategy Conversation gives you time to examine the options, assumptions and opportunity costs properly.
             </p>
             <BookingLink
               className="dear-private-booking"
