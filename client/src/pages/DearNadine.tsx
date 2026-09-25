@@ -56,10 +56,10 @@ export default function DearNadine() {
     <>
       <section className="dear-hero">
         <div className="dear-hero-copy">
-          <Eyebrow number="01">Dear Nadine</Eyebrow>
+          <Eyebrow number="01">DEAR NADINE: THE EDIT</Eyebrow>
           <h1>The questions you ask yourself when work gets <em>quiet.</em></h1>
           <p>
-            A monthly Q&A for lawyers who want a more honest conversation about work, ambition and what comes next. Each edition explores the questions lawyers are asking - and offers a window into the career decisions, tensions and experiences others are navigating
+            A monthly read for lawyers who want to understand what other lawyers are really thinking about. A chance to recognise what feels familiar, see things from a different perspective and think about your career in a wider context. Grounded in anonymous questions, Dear Nadine: The Edit makes space for a candid view about life in the legal profession.
           </p>
           <div className="dear-hero-actions">
             <div className="dear-ask-action-wrapper">

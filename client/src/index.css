@@ -1085,9 +1085,9 @@ em {
 
 .story-copy p:nth-of-type(4) {
   font-family: "DM Serif Display", serif;
+  font-weight: 400;
   font-size: clamp(25px, 2.4vw, 37px);
   line-height: 1.14;
-  letter-spacing: -.03em;
   color: var(--ink);
   margin: 43px 0 19px;
 }
