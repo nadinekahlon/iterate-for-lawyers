@@ -65,6 +65,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMobileMenuOpen(false);
+    window.scrollTo(0, 0);
   }, [location]);
 
   useEffect(() => {
@@ -138,7 +139,8 @@ export function SiteShell({ children }: { children: ReactNode }) {
         </div>
         <div className="footer-bottom">
           <span>© 2026 Iterate for Lawyers</span>
-          <span>Sydney, Australia</span>
+          <Link href="/terms-and-conditions" className="footer-link">Terms and Conditions</Link>
+          <Link href="/privacy-policy" className="footer-link">Privacy Policy</Link>
         </div>
       </footer>
     </div>

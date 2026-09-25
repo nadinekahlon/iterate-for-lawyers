@@ -6,7 +6,9 @@ import DearNadine from "./pages/DearNadine";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Podcast from "./pages/Podcast";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Services from "./pages/Services";
+import TermsAndConditions from "./pages/TermsAndConditions";
 
 function PublicRoutes() {
   return (
@@ -16,6 +18,8 @@ function PublicRoutes() {
       <Route path="/services" component={Services} />
       <Route path="/dear-nadine" component={DearNadine} />
       <Route path="/podcast" component={Podcast} />
+      <Route path="/terms-and-conditions" component={TermsAndConditions} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -1358,6 +1358,148 @@ em {
   color: var(--blue);
 }
 
+.footer-link {
+  color: #5d707b;
+  text-decoration: none;
+  transition: color 0.18s ease-out;
+}
+
+.footer-link:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+/* Legal Pages Styling */
+.legal-section {
+  padding: 100px 9vw 140px;
+}
+
+.legal-container {
+  max-width: 900px;
+}
+
+.legal-lead {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--ink);
+  padding: 24px 28px;
+  background: var(--sky);
+  border-left: 4px solid var(--blue);
+  margin-bottom: 48px;
+}
+
+.legal-content-area {
+  min-height: 250px;
+  color: #3d5563;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.legal-section-block {
+  border-top: 1px solid var(--line);
+  padding-top: 40px;
+  margin-top: 44px;
+}
+
+.legal-section-block:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.legal-content-area h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(26px, 2.4vw, 34px);
+  font-weight: 400;
+  margin: 0 0 18px;
+  color: var(--ink);
+  line-height: 1.18;
+}
+
+.legal-content-area h3 {
+  font-size: clamp(18px, 1.6vw, 22px);
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  margin: 24px 0 12px;
+  color: var(--ink);
+}
+
+.legal-content-area p {
+  margin: 0 0 20px;
+}
+
+.legal-list {
+  list-style: none;
+  padding: 4px 0 0;
+  margin: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legal-list li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #385160;
+}
+
+.legal-list li:before {
+  content: "↘";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.legal-link {
+  color: var(--blue);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: opacity 0.18s ease-out;
+}
+
+.legal-link:hover {
+  opacity: 0.8;
+}
+
+.legal-callout {
+  background: #f0f6fa;
+  border: 1px solid #d2e4f0;
+  border-left: 4px solid var(--green);
+  padding: 24px 28px;
+  margin: 32px 0;
+}
+
+.legal-address-block {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 3.5px solid var(--blue);
+  padding: 22px 26px;
+  margin: 20px 0 28px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.legal-updated-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 48px;
+  padding: 10px 16px;
+  background: var(--sky);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #395365;
+  border: 1px solid #c8d7df;
+}
+
 /* Dear Nadine UI */
 .dear-form-panel {
   position: relative;
