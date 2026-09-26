@@ -1378,16 +1378,6 @@ em {
   max-width: 900px;
 }
 
-.legal-lead {
-  font-size: 18px;
-  line-height: 1.65;
-  color: var(--ink);
-  padding: 24px 28px;
-  background: var(--sky);
-  border-left: 4px solid var(--blue);
-  margin-bottom: 48px;
-}
-
 .legal-content-area {
   min-height: 250px;
   color: #3d5563;

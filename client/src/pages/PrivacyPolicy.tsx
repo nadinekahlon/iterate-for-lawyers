@@ -5,24 +5,24 @@ export default function PrivacyPolicy() {
     <>
       <section className="page-hero page-hero-sky">
         <div className="page-hero-inner">
-          <Eyebrow number="LEGAL">Iterate for Lawyers</Eyebrow>
+          <Eyebrow>Iterate for Lawyers</Eyebrow>
           <h1>
             Privacy<br />
             <em>Policy.</em>
           </h1>
-          <p className="hero-intro">
-            How Nojora Holdings Pty Limited t/as Iterate for Lawyers collects, manages, and protects your personal information.
-          </p>
         </div>
       </section>
 
       <section className="section-paper legal-section">
         <div className="section-slim legal-container">
-          <div className="legal-lead">
-            Nojora Holdings Pty Limited (ABN 35 701 814 271) t/as Iterate for Lawyers (Iterate, we, our, us) and its related bodies recognise the importance of protecting the privacy and rights of individuals in relation to their personal information. This document is our privacy policy and it tells you how we collect and manage your personal information.
-          </div>
-
           <div className="legal-content-area">
+            <div className="legal-section-block">
+              <h2>How Nojora Holdings Pty Limited t/as Iterate for Lawyers collects, manages, and protects your personal information</h2>
+              <p>
+                Nojora Holdings Pty Limited (ABN 35 701 814 271) t/as Iterate for Lawyers (Iterate, we, our, us) and its related bodies recognise the importance of protecting the privacy and rights of individuals in relation to their personal information. This document is our privacy policy and it tells you how we collect and manage your personal information.
+              </p>
+            </div>
+
             <div className="legal-section-block">
               <h2>What is your personal information?</h2>
               <p>
@@ -69,7 +69,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div className="legal-section-block">
-              <h2>Cookies &amp; IP Addresses</h2>
+              <h2>Cookies</h2>
               <p>
                 When you access our website, we may send a “cookie” (which is a small summary file containing a unique ID number) to your computer. This enables us to recognise your computer and keep track of your activity on our website for a period of time. We also use cookies to measure traffic patterns, determine which areas of our website have been visited, and measure transaction patterns in the aggregate.
               </p>
@@ -169,13 +169,14 @@ export default function PrivacyPolicy() {
             </div>
 
             <div className="legal-section-block">
-              <h2>Security &amp; Links to Third Party Websites</h2>
-              <h3>Security</h3>
+              <h2>Security</h2>
               <p>
                 As our website is linked to the internet, and the internet is inherently insecure, we cannot provide any assurance regarding the security of transmission of information you communicate to us online. We also cannot guarantee that the information you supply will not be intercepted while being transmitted over the internet. Accordingly, any personal information or other information which you transmit to us online is transmitted at your own risk.
               </p>
+            </div>
 
-              <h3>Links to Third Party Sites</h3>
+            <div className="legal-section-block">
+              <h2>Links</h2>
               <p>
                 Our website may contain links to other websites operated by third parties. We make no representations or warranties in relation to the privacy practices of any third party website and we are not responsible for the privacy policies or the content of any third party website. Third party websites are responsible for informing you about their own privacy practices.
               </p>
@@ -183,42 +184,39 @@ export default function PrivacyPolicy() {
 
             <div className="legal-section-block">
               <h2>AI Tools</h2>
-              <div className="legal-callout">
-                <p style={{ margin: 0 }}>
-                  We use AI in the creation, support and delivery of our business operations. Your details may be shared on these tools including but not limited to the purpose of delivering a service to you, assisting with workflow, undertaking administration, or in forms of communications with you. Reasonable care is taken to limit the personal information that we share with these tools.
-                </p>
-              </div>
+              <p>
+                We use AI in the creation, support and delivery of our business operations. Your details may be shared on these tools including but not limited to the purpose of delivering a service to you, assisting with workflow, undertaking administration, or in forms of communications with you. Reasonable care is taken to limit the personal information that we share with these tools.
+              </p>
             </div>
 
             <div className="legal-section-block">
-              <h2>Contacting Us &amp; Privacy Complaints</h2>
+              <h2>Contacting us</h2>
               <p>
                 If you have any questions about this privacy policy, any concerns, or feedback regarding the treatment of your privacy, please email <a href="mailto:nadine@iterateforlawyers.com" className="legal-link">nadine@iterateforlawyers.com</a>.
               </p>
-              
-              <h3>Process for complaining about a breach of privacy</h3>
+            </div>
+
+            <div className="legal-section-block">
+              <h2>What is the process for complaining about a breach of privacy?</h2>
               <p>
                 If you believe that your privacy has been breached, please contact <a href="mailto:nadine@iterateforlawyers.com" className="legal-link">nadine@iterateforlawyers.com</a> so that it can be investigated.
               </p>
               <p>
-                If you are not satisfied with our response, you may refer the matter to the <strong>Office of the Australian Information Commissioner (OAIC)</strong>:
+                If you are not satisfied with our response, you may refer the matter to the Office of the Australian Information Commissioner (OAIC):
               </p>
-              <div className="legal-address-block">
+              <p>
                 <strong>Office of the Australian Information Commissioner</strong><br />
                 GPO Box 5218, Sydney NSW 1042<br />
                 Phone: <a href="tel:1300363992" className="legal-link">1300 363 992</a> | Fax: (02) 9284 9666<br />
-                Email: <a href="mailto:enquiries@oaic.gov.au" className="legal-link">enquiries@oaic.gov.au</a> | TTY: 133 677 (ask for 1300 363 992)
-              </div>
+                Email: <a href="mailto:enquiries@oaic.gov.au" className="legal-link">enquiries@oaic.gov.au</a> | TTY: 133 677 then ask for 1300 363 992
+              </p>
             </div>
 
             <div className="legal-section-block">
               <h2>Changes to our privacy policy</h2>
               <p>
-                We may change this privacy policy from time to time. Any updated versions of this privacy policy will be posted on our website.
+                We may change this privacy policy from time to time. Any updated versions of this privacy policy will be posted on our website. This privacy policy was last updated on 25 September 2026.
               </p>
-              <div className="legal-updated-tag">
-                Last updated: 25 September 2026
-              </div>
             </div>
           </div>
         </div>

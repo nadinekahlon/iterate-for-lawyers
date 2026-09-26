@@ -6,30 +6,26 @@ export default function TermsAndConditions() {
     <>
       <section className="page-hero page-hero-sky">
         <div className="page-hero-inner">
-          <Eyebrow number="LEGAL">Iterate for Lawyers</Eyebrow>
+          <Eyebrow>Iterate for Lawyers</Eyebrow>
           <h1>
             Terms &amp;<br />
             <em>Conditions.</em>
           </h1>
-          <p className="hero-intro">
-            These terms and conditions govern your use of the Iterate for Lawyers website and services.
-          </p>
         </div>
       </section>
 
       <section className="section-paper legal-section">
         <div className="section-slim legal-container">
-          <div className="legal-lead">
-            This website is owned and operated by Nojora Holdings Pty Limited t/as Iterate for Lawyers (ABN 35 701 814 271) (Iterate, we, us, our). By accessing this website and any resources or services available through it, you agree to comply with these terms.
-          </div>
-
           <div className="legal-content-area">
             <div className="legal-section-block">
+              <p>
+                This website is owned and operated by Nojora Holdings Pty Limited t/as Iterate for Lawyers (ABN 35 701 814 271) (Iterate, we, us, our).
+              </p>
               <p>
                 These terms and conditions (terms) govern your use of this website.
               </p>
               <p>
-                You may only access and use our website if you accept these terms. If you do not agree to these terms, you must not continue to access this website.
+                By accessing this website and any resources or services available through it, you agree to comply with these terms. You may only access and use our website if you accept these terms. If you do not agree to these terms, you must not continue to access this website.
               </p>
               <p>
                 Iterate reserves the right to vary, amend or withdraw these terms at any time without notice to you.
@@ -55,10 +51,7 @@ export default function TermsAndConditions() {
             <div className="legal-section-block">
               <h2>General Information Only</h2>
               <p>
-                The information on this website (and any services or resources provided through it) is provided for general information and educational purposes only and does not constitute financial, legal, or other professional advice. Information published on this website has been prepared without taking into consideration your personal objectives, individual circumstances, financial situation or specific needs.
-              </p>
-              <p>
-                You agree that you will not rely on any information, service or resource provided on or through the website and that you will seek independent professional advice tailored to your circumstances before making any employment, business, legal or financial decisions.
+                The information on this website (and any services or resources provided through it) is provided for general information and educational purposes only and does not constitute financial, legal, or other professional advice. Information published on this website has been prepared without taking into consideration your personal objectives, individual circumstances, financial situation or specific needs. You agree that you will not rely on any information, service or resource provided on or through the website and that you will seek independent professional advice tailored to your circumstances before making any employment, business, legal or financial decisions.
               </p>
               <p>
                 While reasonable care is taken, Iterate does not warrant the accuracy or completeness of the any information provided or published on the website.
@@ -69,14 +62,14 @@ export default function TermsAndConditions() {
             </div>
 
             <div className="legal-section-block">
-              <h2>Third Party Links</h2>
+              <h2>Third party links</h2>
               <p>
                 The website may contain links to third party websites, calendars, payment systems, software platforms or social media sites. Iterate is not responsible for the content, availability or privacy practices of any third party websites or platforms.
               </p>
             </div>
 
             <div className="legal-section-block">
-              <h2>Email Communication</h2>
+              <h2>Email communication</h2>
               <p>
                 By subscribing and/or providing your personal details through the website, you consent to receive emails from us (and any third party platform used to enable that subscription) as well as publications (including Dear Nadine) and any other offers from time to time. You can unsubscribe at any time using the link in any email. Further details on how we treat your personal information is contained in our <Link href="/privacy-policy" className="legal-link">Privacy Policy</Link>.
               </p>
@@ -104,7 +97,7 @@ export default function TermsAndConditions() {
             </div>
 
             <div className="legal-section-block">
-              <h2>Amendment and Cancellation</h2>
+              <h2>Amendment and cancellation</h2>
               <p>
                 Iterate in its absolute discretion reserves the right to revise, amend or withdraw access to the website at any time without notice to you.
               </p>
@@ -118,13 +111,13 @@ export default function TermsAndConditions() {
             </div>
 
             <div className="legal-section-block">
-              <h2>Governing Law</h2>
+              <h2>Governing law</h2>
               <p>
                 The terms are governed by the laws of New South Wales. You irrevocably agree to submit to the exclusive jurisdiction of the courts of New South Wales.
               </p>
-              <div className="legal-updated-tag">
-                Last updated: 25 September 2026
-              </div>
+              <p>
+                These terms were last updated on 25 September 2026.
+              </p>
             </div>
           </div>
         </div>
