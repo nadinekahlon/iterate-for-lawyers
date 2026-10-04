@@ -103,7 +103,7 @@ export default function PrivacyPolicy() {
               </p>
               <ul className="legal-list">
                 <li>To provide products and services to you (including career strategy sessions)</li>
-                <li>To send communications requested by you (including Dear Nadine)</li>
+                <li>To send communications requested by you (including the Newsletter)</li>
                 <li>To answer enquiries and provide information or advice about existing and new products or services</li>
                 <li>To provide you with access to protected areas of our website</li>
                 <li>To assess the performance of the website and to improve the operation of the website</li>

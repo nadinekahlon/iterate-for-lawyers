@@ -6,6 +6,18 @@
       "includeFiles": "server/**"
     }
   },
+  "redirects": [
+    {
+      "source": "/dear-nadine",
+      "destination": "/newsletter",
+      "permanent": true
+    },
+    {
+      "source": "/dear-nadine/:path*",
+      "destination": "/newsletter",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/(.*)",

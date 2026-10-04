@@ -1490,7 +1490,7 @@ em {
   border: 1px solid #c8d7df;
 }
 
-/* Dear Nadine UI */
+/* Newsletter UI */
 .dear-form-panel {
   position: relative;
   border-top: 7px solid var(--ink);
@@ -1522,43 +1522,62 @@ em {
   background: var(--green);
 }
 
+.newsletter-field-label {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #173143;
+  margin-bottom: 6px;
+  letter-spacing: .02em;
+}
+
 .native-kit-form {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 8px;
-  padding: 18px 0 2px;
-  border-bottom: 1px solid #9abccd;
+  padding: 0;
+  border-bottom: none;
 }
 
 .native-kit-form input {
   width: 100%;
-  min-height: 47px;
+  min-height: 48px;
   background: #fff;
   border: 1px solid #a8c3d0;
   border-radius: 0;
-  padding: 0 14px;
+  padding: 0 16px;
   color: var(--ink);
   font: 400 14px "DM Sans", sans-serif;
   outline: none;
   transition: border-color .16s ease-out, box-shadow .16s ease-out;
 }
 
+.native-kit-form input::placeholder {
+  color: #8da3b0;
+}
+
 .native-kit-form input:focus {
   border-color: var(--ink);
-  box-shadow: 3px 3px 0 var(--green);
+  box-shadow: 2px 2px 0 var(--blue);
 }
 
 .native-kit-form button {
-  min-height: 47px;
+  min-height: 48px;
   border: 1px solid var(--ink);
   border-radius: 0;
   background: var(--ink);
   color: #fff;
-  padding: 0 16px;
-  font: 700 10px "DM Sans", sans-serif;
+  padding: 0 22px;
+  font: 700 11px "DM Sans", sans-serif;
   letter-spacing: .14em;
   text-transform: uppercase;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  gap: 10px;
   transition: background .16s ease-out, transform .16s ease-out;
 }
 
@@ -1579,348 +1598,175 @@ em {
 
 .native-kit-form button span {
   font-size: 15px;
-  margin-left: 8px;
+  line-height: 1;
 }
 
 .native-kit-note {
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   color: #496271;
   font-size: 12px;
   line-height: 1.5;
 }
 
-.dear-hero {
-  padding: 128px 9vw 112px;
+/* SECTION 01 — NEWSLETTER */
+.newsletter-hero {
+  padding: 120px 9vw 100px;
   background: var(--sky);
 }
 
-.dear-hero-copy {
-  max-width: 1020px;
-  padding: 0;
+.newsletter-hero-inner {
+  max-width: 960px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.dear-hero-copy h1 {
-  max-width: 1000px;
-  font-size: clamp(64px, 6.2vw, 100px);
-}
-
-.dear-hero-copy>p {
-  max-width: 850px;
-  color: #405b6b;
-  font-size: 17px;
-  margin: 32px 0;
-}
-
-.dear-hero-actions {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.dear-ask-action-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.dear-ask-subtext {
-  font-size: 12px;
-  color: #496170;
-  font-weight: 500;
-  margin-left: 2px;
-}
-
-.dear-hero-aside {
-  background: var(--ink);
-  color: #fff;
-  padding: 90px 15% 78px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.dear-aside-number {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  font-weight: 700;
-  color: #a6cbdc;
-}
-
-.dear-aside-lead {
+.newsletter-hero h1 {
   font-family: "DM Serif Display", serif;
-  font-size: clamp(35px, 3.3vw, 54px);
-  line-height: .96;
-  letter-spacing: -.045em;
-  margin: 27px 0;
+  font-size: clamp(54px, 5.8vw, 92px);
+  line-height: 1.05;
+  letter-spacing: -.035em;
+  color: var(--ink);
+  margin: 0 0 32px;
 }
 
-.dear-aside-lead em {
-  color: #68bee8;
+.newsletter-hero h1 em {
+  color: var(--blue);
+  font-style: italic;
+  display: inline-block;
 }
 
-.dear-aside-rule {
-  height: 1px;
-  background: #54768b;
+.newsletter-hero-body {
+  max-width: 580px;
+  color: #405b6b;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 38px;
+}
+
+.newsletter-form-container {
+  max-width: 520px;
   width: 100%;
-  margin: 13px 0 22px;
 }
 
-.dear-hero-aside>p:last-child {
-  color: #c9dce6;
-  font-size: 14px;
-  margin: 0;
-  max-width: 350px;
+.newsletter-byline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 36px;
 }
 
-.dear-statement {
-  padding: 90px 9vw;
+.newsletter-byline-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+  flex-shrink: 0;
 }
 
-.dear-statement-inner {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 9vw;
-  max-width: 1220px;
-}
-
-.dear-statement h2 {
-  font-size: clamp(45px, 4.4vw, 72px);
-  max-width: 630px;
-}
-
-.dear-statement h2 em {
-  color: #68bee8;
-}
-
-.dear-steps {
+.newsletter-byline-info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  max-width: 520px;
+  gap: 2px;
 }
 
-.dear-step-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-left: 3.5px solid #68bee8;
-  padding: 20px 24px;
-  border-radius: 2px;
-  transition: transform 0.18s ease-out, background 0.18s ease-out, border-color 0.18s ease-out;
-}
-
-.dear-step-card:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.16);
-  border-left-color: var(--green);
-}
-
-.dear-step-card .step-title {
-  font-family: "DM Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0 0 6px;
-  line-height: 1.35;
-  letter-spacing: -0.01em;
-}
-
-.dear-step-card .step-title .step-num {
-  color: #68bee8;
-  margin-right: 4px;
-}
-
-.dear-step-card p {
+.newsletter-byline-name {
   font-size: 14px;
-  line-height: 1.55;
-  color: #c4dbe7;
-  margin: 0;
-}
-
-.dear-statement-copy p {
-  margin: 0 0 24px;
-}
-
-.dear-ask {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  background: #fff;
-}
-
-.dear-ask-copy {
-  padding: 130px 15% 120px 14%;
-}
-
-.dear-ask-copy h2 {
-  font-size: clamp(45px, 4.5vw, 71px);
-}
-
-.dear-ask-copy>p {
-  color: #49616f;
-  margin: 29px 0 33px;
-  max-width: 450px;
-}
-
-.dear-guardrails {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-top: 1px solid var(--line);
-  max-width: 450px;
-}
-
-.dear-guardrails li {
-  position: relative;
-  padding: 16px 0 16px 25px;
-  border-bottom: 1px solid var(--line);
-  font-size: 13px;
-  line-height: 1.45;
-  color: #385263;
-}
-
-.dear-guardrails li:before {
-  content: "↘";
-  position: absolute;
-  left: 0;
-  color: var(--blue);
-}
-
-.dear-subscribe {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7vw;
-  padding: 120px 9vw 130px;
-}
-
-.dear-subscribe-copy .eyebrow {
-  margin-bottom: 14px;
-}
-
-.dear-subscribe-copy h2 {
-  font-size: clamp(45px, 4.4vw, 72px);
-  max-width: 670px;
-}
-
-.dear-subscribe-copy>p {
-  max-width: 500px;
-  color: #425d6c;
-  font-size: 17px;
-  margin: 29px 0 0;
-}
-
-.dear-subscribe-panel {
-  align-self: end;
-  max-width: 520px;
-  width: 100%;
-  padding: 34px 0 0;
-  border-top: 1px solid #9abccd;
-}
-
-.dear-ask-trigger {
-  font-family: "DM Sans", sans-serif;
-  cursor: pointer;
-}
-
-.dear-question-dialog {
-  width: min(1080px, calc(100vw - 2rem)) !important;
-  max-width: min(1080px, calc(100vw - 2rem)) !important;
-  max-height: min(760px, calc(100dvh - 2rem));
-  display: grid !important;
-  grid-template-columns: .82fr 1.18fr;
-  gap: 0 !important;
-  padding: 0 !important;
-  border: 1px solid var(--line) !important;
-  border-radius: 0 !important;
-  overflow-y: auto;
-  background: var(--paper) !important;
-  box-shadow: 0 28px 90px rgba(7, 27, 46, .24);
-}
-
-.dear-question-dialog [data-slot="dialog-close"] {
-  top: 18px;
-  right: 18px;
-  color: var(--ink);
-  z-index: 2;
-}
-
-.dear-dialog-copy {
-  padding: 76px 13% 70px;
-  background: var(--sky);
-}
-
-.dear-dialog-copy h2 {
-  font-size: clamp(42px, 4.1vw, 65px);
-}
-
-.dear-dialog-copy p {
-  max-width: 410px;
-  color: #49616f;
-  margin: 29px 0 33px;
-}
-
-.dear-dialog-form {
-  padding: 68px 9% 62px;
-  background: var(--paper);
-}
-
-.dear-dialog-form .dear-form-caption {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 13px;
-  margin-bottom: 17px;
-  text-transform: uppercase;
-  font-size: 9px;
-  letter-spacing: .15em;
   font-weight: 700;
-  color: #506a79;
+  color: var(--ink);
+  line-height: 1.3;
 }
 
-.dear-dialog-form .native-question-form {
-  padding: 0;
-  border: 0;
-  background: transparent;
+.newsletter-byline-subtitle {
+  font-size: 13px;
+  color: #576c7b;
+  line-height: 1.35;
 }
 
-.dear-dialog-form .native-form-success {
-  min-height: 0;
-  padding: 28px 0;
-  border: 0;
-  background: transparent;
+/* SECTION 02 — WHEN THE QUESTION IS PERSONAL */
+.newsletter-personal {
+  background: #071b2e;
+  color: #ffffff;
+  padding: 110px 9vw 120px;
 }
 
-.dear-private {
-  padding: 135px 9vw;
-}
-
-.dear-private-inner {
+.newsletter-personal-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10vw;
+  gap: 8vw;
   max-width: 1220px;
+  align-items: flex-start;
 }
 
-.dear-private h2 {
-  font-size: clamp(47px, 4.6vw, 74px);
-  max-width: 650px;
+.newsletter-personal-heading-col {
+  max-width: 500px;
 }
 
-.dear-private-copy {
-  max-width: 475px;
-  align-self: end;
-  padding-bottom: 8px;
+.newsletter-personal h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(44px, 4.4vw, 70px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+  color: #ffffff;
+  max-width: 440px;
+  margin: 0;
 }
 
-.dear-private-copy p {
-  margin: 0 0 31px;
-  color: #405b68;
+.newsletter-personal h2 em {
+  color: #68bee8;
+  font-style: italic;
+  display: block;
+}
+
+.newsletter-personal-content-col {
+  max-width: 480px;
+  padding-top: 52px;
+}
+
+.newsletter-personal-content-col p {
+  color: #c9dce6;
   font-size: 17px;
+  line-height: 1.55;
+  margin: 0 0 32px;
+}
+
+.newsletter-personal-booking {
+  background: #ffffff !important;
+  color: #071b2e !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 0;
+  padding: 16px 24px !important;
+  display: inline-flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  text-align: left !important;
+  width: max-content;
+  max-width: 100%;
+  white-space: nowrap !important;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: .12em !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important;
+  transition: transform .18s ease-out, background .18s ease-out, border-color .18s ease-out, color .18s ease-out !important;
+}
+
+.newsletter-personal-booking:hover {
+  background: #e8f2f8 !important;
+  border-color: #e8f2f8 !important;
+  color: #071b2e !important;
+  transform: translateY(-2px);
+}
+
+.newsletter-personal-booking .arrow {
+  color: #071b2e !important;
+  font-size: 18px !important;
+  margin-left: 18px;
+  flex-shrink: 0;
 }
 
 /* Question form */
@@ -2279,9 +2125,6 @@ em {
   .home-hero,
   .split-grid,
   .podcast-hero,
-  .dear-hero,
-  .dear-ask,
-  .dear-subscribe,
   .about-credentials {
     grid-template-columns: 1fr;
   }
@@ -2361,8 +2204,6 @@ em {
   }
 
   .story-grid,
-  .dear-statement-inner,
-  .dear-private-inner,
   .about-why-inner {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -2425,53 +2266,25 @@ em {
     grid-template-columns: 100px 1fr;
   }
 
-  .dear-hero {
+  .newsletter-hero {
     padding: 85px 9vw 75px;
   }
 
-  .dear-hero-copy {
-    padding: 0;
-  }
-
-  .dear-hero-aside {
-    padding: 72px 9vw;
-  }
-
-  .dear-statement {
-    padding: 65px 9vw;
-  }
-
-  .dear-statement-inner {
-    gap: 14px;
-  }
-
-  .dear-statement-copy {
-    padding: 0;
-  }
-
-  .dear-ask-copy {
+  .newsletter-personal {
     padding: 85px 9vw;
   }
 
-  .dear-form-panel {
-    padding: 55px 9vw 62px;
+  .newsletter-personal-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
 
-  .dear-subscribe {
-    padding: 85px 9vw;
-    gap: 50px;
+  .newsletter-personal-content-col {
+    padding-top: 0;
   }
 
-  .dear-subscribe-panel {
+  .newsletter-personal h2 {
     max-width: none;
-  }
-
-  .dear-private {
-    padding: 85px 9vw;
-  }
-
-  .dear-private-copy {
-    padding: 0;
   }
 
   .about-credentials {
@@ -2529,7 +2342,7 @@ em {
   h1,
   .hero-copy h1,
   .about-hero-copy h1,
-  .dear-hero-copy h1,
+  .newsletter-hero h1,
   .podcast-copy h1,
   .page-hero h1 {
     font-size: 58px;
@@ -2633,6 +2446,17 @@ em {
 
   .native-kit-form button {
     width: 100%;
+  }
+
+  .newsletter-personal-booking {
+    font-size: 9.5px !important;
+    letter-spacing: .08em !important;
+    padding: 14px 16px !important;
+  }
+
+  .newsletter-personal-booking .arrow {
+    margin-left: 10px;
+    font-size: 15px !important;
   }
 }
 

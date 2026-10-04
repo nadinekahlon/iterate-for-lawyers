@@ -71,7 +71,7 @@ export default function TermsAndConditions() {
             <div className="legal-section-block">
               <h2>Email communication</h2>
               <p>
-                By subscribing and/or providing your personal details through the website, you consent to receive emails from us (and any third party platform used to enable that subscription) as well as publications (including Dear Nadine) and any other offers from time to time. You can unsubscribe at any time using the link in any email. Further details on how we treat your personal information is contained in our <Link href="/privacy-policy" className="legal-link">Privacy Policy</Link>.
+                By subscribing and/or providing your personal details through the website, you consent to receive emails from us (and any third party platform used to enable that subscription) as well as publications (including the Newsletter) and any other offers from time to time. You can unsubscribe at any time using the link in any email. Further details on how we treat your personal information is contained in our <Link href="/privacy-policy" className="legal-link">Privacy Policy</Link>.
               </p>
             </div>
 

@@ -16,7 +16,7 @@ function PublicRoutes() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
-      <Route path="/dear-nadine" component={DearNadine} />
+      <Route path="/newsletter" component={DearNadine} />
       <Route path="/podcast" component={Podcast} />
       <Route path="/terms-and-conditions" component={TermsAndConditions} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />

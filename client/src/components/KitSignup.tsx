@@ -12,7 +12,7 @@ function toErrorMessageString(error: unknown, fallback: string): string {
   return fallback;
 }
 
-export default function KitSignup() {
+export default function KitSignup({ buttonText = "SUBSCRIBE" }: { buttonText?: string } = {}) {
   const [email, setEmail] = useState("");
   const [website, setWebsite] = useState("");
   const [loading, setLoading] = useState(false);
@@ -59,7 +59,7 @@ export default function KitSignup() {
         <span>One more step</span>
         <h3>Check your inbox.</h3>
         <p>
-          Check your inbox for Kit’s confirmation email, then click its confirmation link to complete your Dear Nadine subscription.
+          Check your inbox for Kit’s confirmation email, then click its confirmation link to complete your subscription.
         </p>
       </div>
     );
@@ -72,21 +72,21 @@ export default function KitSignup() {
           {errorMessage}
         </p>
       )}
+      <label className="newsletter-field-label" htmlFor="dear-nadine-email">
+        Email address
+      </label>
       <form
         action="/api/dear-nadine/subscribe"
         className="native-kit-form"
         method="post"
         onSubmit={handleSubmit}
       >
-        <label className="sr-only" htmlFor="dear-nadine-email">
-          Email address
-        </label>
         <input
           id="dear-nadine-email"
           name="email_address"
           type="email"
           autoComplete="email"
-          placeholder="Email address"
+          placeholder="you@example.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           disabled={loading}
@@ -103,7 +103,7 @@ export default function KitSignup() {
           />
         </label>
         <button type="submit" disabled={loading}>
-          {loading ? "Saving..." : "Receive The Edit"} <span aria-hidden="true">→</span>
+          {loading ? "Saving..." : buttonText} <span aria-hidden="true">→</span>
         </button>
       </form>
       <p className="native-kit-note">
